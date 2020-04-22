@@ -8,3 +8,17 @@ ansible/playbook-install-jdk8.yml
 
 todo:
 - проверка установленной версии, чтоб не повторять повторное разворачивание
+
+Урок 2: развернем VNC сервер для установки WLS 
+поучим ansible-galaxy
+https://cplatform99.blogspot.com/2017/05/vnc-configuration-using-ansible-in.html
+
+add: добавить правила iptables
+todo: изучить firewall-cmd
+
+Урок 3: запустить инсталятор Oracle
+- добавим пользователя oracle
+- xhost +
+застрял на запуске, нужны утилиты xdpyinfo, xorg-x11-utils для корректного разрешения экрана
+
+Поставил на одном хосте weblogic/QaZwSx123

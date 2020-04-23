@@ -22,3 +22,10 @@ todo: изучить firewall-cmd
 застрял на запуске, нужны утилиты xdpyinfo, xorg-x11-utils для корректного разрешения экрана
 
 Поставил на одном хосте weblogic/QaZwSx123
+
+Урок 4: добавил второй сервер WLS в консоль AdminServer
+- oracle_common/common/bin/pack.sh managed=true -domain=/home/oracle/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain  -template=/home/oracle/domain_managed.jar -template_name="Domain"
+- oracle_common/common/bin/unpack.sh -domain=/home/oracle/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain  -template=/home/oracle/domain_managed.jar
+- user_projects/domains/base_domain/bin/startManagedWebLogic.sh node-2 http://node-1.nonon.ru:7001
+
+todo: разобраться с запуском NodeManager и управлением из AdminServer

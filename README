@@ -29,3 +29,11 @@ todo: изучить firewall-cmd
 - user_projects/domains/base_domain/bin/startManagedWebLogic.sh node-2 http://node-1.nonon.ru:7001
 
 todo: разобраться с запуском NodeManager и управлением из AdminServer
+upd: Установил NodeManager, подергал Services is AdminServer
+upd: Кластер работет только с механизмами multicast unicast
+
+Урок 5: Ставлю в silent режиме на нодах в приватной сети
+- нужен response файл и oraInst.loc
+- java -jar fmw_12.2.1.4.0_wls.jar -silent -ignoreSysPrereqs -responseFile /home/oracle/response -invPtrLoc /home/oracle/oraInst.loc
+
+Итог: кластер есть

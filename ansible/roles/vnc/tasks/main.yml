@@ -4,6 +4,8 @@
   yum: pkg={{ item }} state=installed
   with_items:
     - tigervnc-server
+    - xorg-x11-utils
+    - xterm
     
 - name: Ensure group "oracle" exists
   group:
@@ -59,3 +61,12 @@
     ctstate: NEW
     jump: ACCEPT
     comment: Accept new console connections.     
+
+- name: Allow new incoming  packets on TCP port 5556 (node manager WLS).
+  iptables:
+    chain: IN_public_allow
+    protocol: tcp
+    destination_port: 5556
+    ctstate: NEW
+    jump: ACCEPT
+    comment: Accept new node manager connections.      

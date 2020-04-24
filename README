@@ -37,3 +37,9 @@ upd: Кластер работет только с механизмами multic
 - java -jar fmw_12.2.1.4.0_wls.jar -silent -ignoreSysPrereqs -responseFile /home/oracle/response -invPtrLoc /home/oracle/oraInst.loc
 
 Итог: кластер есть
+
+Урок 6: Ставим Payara Server
+- java должна быть менее 8u152 https://stackoverflow.com/questions/49984699/glassfish-5-will-not-start-after-enable-secure-admin-command/49998266
+иначе ssl не заводится
+
+Установил кластер из 2-х node. 
